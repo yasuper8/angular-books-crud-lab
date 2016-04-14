@@ -2,12 +2,11 @@
 
 | **Objectives** |
 | :---- |
+| Get practice building an Angular client side |
 | Use $http to access a RESTful API |
 | Practice routing in Angular using `ngRoute` |
 
-In this lab, you'll be creating a simple library app to keep track of books. The goal of this lab is to practice routing in Angular by:
-* Creating route-specific view templates and controllers.
-* Creating RESTful `index` and `show` routes for `books`.
+In this lab, you'll be creating a simple library app to keep track of books.
 
 When a user goes to `/`, they should see a list of all of the books in the API. When a user goes to `/books/:id`, they should see a single book. On the `/books/:id` page a user should be able to edit or delete a book.
 
