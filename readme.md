@@ -9,15 +9,15 @@ In this lab, you'll be creating a simple library app to keep track of books. The
 * Creating route-specific view templates and controllers.
 * Creating RESTful `index` and `show` routes for `books`.
 
-When a user goes to `/`, they should see a list of books (`books#index`). When a user goes to `/books/:id`, they should see a single book (`books#show`).
+When a user goes to `/`, they should see a list of all of the books in the API. When a user goes to `/books/:id`, they should see a single book. On the `/books/:id` page a user should be able to edit or delete a book.
 
-Your data (a list of books) lives inside `allBooks.js`. This afternoon, you'll learn how to retrieve this data from an external API to perform all CRUD operations, but for now, you'll work with this sample book data.
+Your data (a list of books) is available at `https://super-crud.herokuapp.com/books`. You and your classmates will all be working with this database, so things might get a little crazy. If there are no books left or far too many books, feel free to reset the database by clicking [the reset button](http://super-crud.herokuapp.com/reset). Don't do this without warning your classmates though, otherwise they might be puzzled why their newly created book resources aren't appearing in the database.
 
 ## Getting Started
 
-1. Fork this repo, and clone it into your `develop` folder on your local machine.
+1. Fork this repo, and clone it into your `wdi` folder on your local machine.
 2. Change directories into `angular-routing-lab`.
-3. Run `budo app.js --open --pushstate` from the Terminal to start your server and open your app in the browser.
+3. Run `budo -P --host=localhost --open` from the Terminal to start your server and open your app in the browser.
 
 ## ngRoute
 
@@ -29,61 +29,21 @@ A single page app needs a way of responding to user navigation. In order to perf
 
 2. Configure your routes:
 
-  * In `app.js`, include the `ngRoute` module:
+  * Add your first route:
 
     ``` js
     // app.js
-
-    var app = angular.module('libraryApp', ['ngRoute']);
-    ```
-
-  * Next, add your first route:
-
-    ``` js
-    // app.js
-
-    app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
-      $routeProvider
-        .when('/', {
-          template: 'Home!'
-        });
-    }]);
-    ```
-
-3. Fire up a simple server to enable client-side routing:
-      Make sure you're in the application's root directory!
-      ``` bash
-      python -m SimpleHTTPServer 3000
-      # or
-      ruby -rwebrick -e 'WEBrick::HTTPServer.new(:Port => 3000, :DocumentRoot => Dir.pwd).start']
-      #or
-      budo app.js --open --pushstate
-      ```
-
-4. Use a template file instead of a string:
-  * Change `template: 'Home!'` to `templateUrl: 'templates/books/index.html'`
-  * Refresh the page, and you should see the content of `templates/books/index.html`.
-
-5. Set up a controller:
-
-  * It's time to attach a template to a specific controller. Modify your route so that it looks like this:
-
-    ``` js
-    // app.js
-
     app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider)  {
       $routeProvider
         .when('/', {
-          // template: 'Home!'
           templateUrl: 'templates/books/index.html',
-          controller: 'BooksIndexCtrl'
+          controller: 'BooksIndexController'
+          controllerAs: 'booksIndexCtrl'
         });
     }]);
     ```
 
-  * In the `BooksIndexCtrl`, there's a test variable attached to `$scope` called `booksIndexTest`. Since `templates/books/index.html` contains `{{booksIndexTest}}`, you should see the message "Connected to BooksIndexCtrl" when you refresh the page.
-
-## Book List Challenge
+## Book List: 
 
 Can you display a list of all the books on the books index page? Remember that your sample book data is saved to a global variable called `allBooks`.
 
