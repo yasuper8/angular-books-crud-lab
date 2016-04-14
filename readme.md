@@ -13,41 +13,33 @@ When a user goes to `/`, they should see a list of all of the books in the API. 
 
 Your data (a list of books) is available at `https://super-crud.herokuapp.com/books`. You and your classmates will all be working with this database, so things might get a little crazy. If there are no books left or far too many books, feel free to reset the database by clicking [the reset button](http://super-crud.herokuapp.com/reset). Don't do this without warning your classmates though, otherwise they might be puzzled why their newly created book resources aren't appearing in the database.
 
+## Expectations:
+
+Your finished product will
+
+  1. The successfully route the user to an index page at `/`. That page will:
+    * display all of the books.
+    * show the image, title, author, and release date of each book.
+    * include a link to the show book page on the title of each book.
+  2. Successfully route the use to a show book page (`/books/:id`). The show page will:
+    * display all of the data about the specific book.
+    * have a delete button that deletes the specific book from the database and, when successfully deleted, redirects the user to the home page.
+    * have an edit button that reveals a form for the user to edit the attributes of the book.  
+    * The form will have a save button that sends the edits to the database and, when successfully updated, redirects the user to the home page.
+    * have a cancel button that does not save any of the changes the user just made.
+
 ## Getting Started
 
 1. Fork this repo, and clone it into your `wdi` folder on your local machine.
 2. Change directories into `angular-routing-lab`.
 3. Run `budo -P --host=localhost --open` from the Terminal to start your server and open your app in the browser.
-
-## ngRoute
-
-A single page app needs a way of responding to user navigation. In order to perform client-side routing, your app needs a way to capture and respond to URL changes. For example, if the user clicks on a link to `/books/1424`, you need your Angular application to know how to respond (with what template and controller to use). What you *don't* want to happen is for the request to reach the server.
-
 1. Include `ngRoute`:
   * Add the CDN for `ngRoute` in `index.html`.
   * Add the `ng-view` directive inside the Bootstrap `.col-md-6` in `index.html`
 
-2. Configure your routes:
+2. Configure your routes, build your templates, build your controllers, win.
 
-  * Add your first route:
 
-    ``` js
-    // app.js
-    app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider)  {
-      $routeProvider
-        .when('/', {
-          templateUrl: 'templates/books/index.html',
-          controller: 'BooksIndexController'
-          controllerAs: 'booksIndexCtrl'
-        });
-    }]);
-    ```
-
-## Book List: 
-
-Can you display a list of all the books on the books index page? Remember that your sample book data is saved to a global variable called `allBooks`.
-
-What directive would you use to loop through the list of books?
 
 ## HTML5 Mode
 
@@ -70,49 +62,32 @@ app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $lo
 
 Now instead of linking to `/#/books/1424`, you can link to `/books/1424`.
 
-## Book Show Challenge
+* For your first route, identify the html file path that refers to the desired template, the proper controller for that view, and the name that will use for the controller within the view:
 
-To set up a `books#show` route, you need to first build a URL for each book with the `id` parameter.
-
-For each of your books on the `books#index` page, add a link:
-
-```html
-<!-- templates/books/index.html.erb -->
-
-<h5><a ng-href="/books/{{book._id}}">{{book.title}}</a></h5>
-```
-
-When a user navigates to `/books/:id`, you want to display the book with the matching id. First, update the route:
-
-```js
-// app.js
-
-app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider)  {
+  ``` js
+  // app.js in the config function
   $routeProvider
     .when('/', {
-      templateUrl: 'templates/books/index.html',
-      controller: 'BooksIndexCtrl'
+      templateUrl: /* Include the path to the index template */,
+      controller:  /* Which controller do you want the main page to use */,
+      controllerAs:/* What will you call the controller in the html? */
     })
-    .when('/books/:id', {
-      templateUrl: 'templates/books/show.html',
-      controller: 'BooksShowCtrl'
-    });
-}]);
-```
+  ```
 
-At this point, navigate to `/books/1424` in the browser and make sure the `books#show` template and controller are working. Note that it doesn't matter that the book with an id of 1424 doesn't exist, since you haven't done anything with the book id yet!
-
-Next, inject a new module into `BooksShowCtrl` called `$routeParams`:
+* Note that there's already a default route:
 
 ```js
-// app.js
-
-app.controller('BooksShowCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
-  var bookId = $routeParams.id;
-}]);
+// app.js in the config function
+.otherwise({
+  redirectTo: '/'
+});
 ```
 
-Now that you have `routeParams` set up, can you use `bookId` to find the specific book in `allBooks`? How would you display only that individual book in the view?
+* Make sure to add a route for the individual book view.
+
+3. Make sure you can read the API and display the proper data.
+4.
+
 
 ## Stretch Challenges
 
