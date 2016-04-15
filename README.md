@@ -16,14 +16,14 @@ Your data (a list of books) is available at `https://super-crud.herokuapp.com/bo
 
 Your finished product will
 
-  1. The successfully route the user to an index page at `/`. That page will:
+  1. Successfully route the user to an index page at `/`. That page will:
     * display all of the books.
     * show the image, title, author, and release date of each book.
     * include a link to the show book page on the title of each book.
   2. Successfully route the use to a show book page (`/books/:id`). The show page will:
     * display all of the data about the specific book.
     * have a delete button that deletes the specific book from the database and, when successfully deleted, redirects the user to the home page.
-    * have an edit button that reveals a form for the user to edit the attributes of the book.  
+    * have an edit button that reveals a form for the user to edit the attributes of the book.
     * The form will have a save button that sends the edits to the database and, when successfully updated, redirects the user to the home page.
     * have a cancel button that does not save any of the changes the user just made.
 
