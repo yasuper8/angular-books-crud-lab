@@ -1,6 +1,6 @@
 angular.module('libraryApp', ['ngRoute'])
        .config(config)
-       .controller('BooksShowController', BooksShowController)
+       .controller('BooksShowController', BooksShowController);
 
 ////////////
 // ROUTES //
@@ -19,6 +19,7 @@ function config (  $routeProvider,   $locationProvider  )  {
       redirectTo: '/'
     });
 
+  // this just makes it so our URLs don't have /#/ in them.
   $locationProvider
     .html5Mode({
       enabled: true,
