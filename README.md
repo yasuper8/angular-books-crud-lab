@@ -32,11 +32,16 @@ Your finished product will
 1. Fork this repo, and clone it into your `wdi` folder on your local machine.
 2. Change directories into `angular-books-crud-lab`.
 3. Run `budo -P --host=localhost --open` from the Terminal to start your server and open your app in the browser.
-1. Include `ngRoute`:
-  * Add the CDN for `ngRoute` in `index.html`.
-  * Add the `ng-view` directive inside the Bootstrap `.col-md-6` in `index.html`
+  * You will see errors in your console now.
+1. You **must** setup `ngRoute before you jump into coding:
+  * Add the CDN for `ngRoute` in the main `index.html`.
+  * Add the `ng-view` directive inside the Bootstrap `.col-md-6` in the main `index.html`
+  * Finally, configure your home `/` route in `app.js`
+    * Which books template will you display?
+    * Which controller will it use?
+    * What will that controller be named "as"?
 
-2. Configure your routes, build your templates, build your controllers, win.
+2. If you see no errors, you're ready to start CRUDing! Build your templates, build your controllers, add a show route, win.
 
 ## Stretch Challenges
 
