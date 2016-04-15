@@ -30,7 +30,7 @@ Your finished product will
 ## Getting Started
 
 1. Fork this repo, and clone it into your `wdi` folder on your local machine.
-2. Change directories into `angular-routing-lab`.
+2. Change directories into `angular-books-crud-lab`.
 3. Run `budo -P --host=localhost --open` from the Terminal to start your server and open your app in the browser.
 1. Include `ngRoute`:
   * Add the CDN for `ngRoute` in `index.html`.
@@ -45,4 +45,4 @@ Your finished product will
 
 ## Submission
 
-Make a pull request with a 0 - 5 rating of your comfort of the assignment, a 0 - 5 rating of your completeness on the assignment, and a note on your experience completing the lab. Make sure your pull request is going to `sf-wdi-27-28/angular-routing-lab`. *Check the base fork before you submit!*
+Make a pull request with a 0 - 5 rating of your comfort of the assignment, a 0 - 5 rating of your completeness on the assignment, and a note on your experience completing the lab. Make sure your pull request is going to `sf-wdi-27-28/angular-books-crud-lab`. *Check the base fork before you submit!*
