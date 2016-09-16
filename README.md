@@ -61,7 +61,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 ### Tips
 
 * Commit frequently!
-* The books api is set up with RESTful routes, so follow RESTful routing conventions.  You can test endpoints with Postman or cURL. 
+* The books api is set up with RESTful routes, so follow RESTful routing conventions.  You can test endpoints with Postman or cURL, or by setting up a simple request to trigger them. 
 * Look at (`console.log`) the data you get back from each `$http` request!
 * <details><summary>Click for a hint on how to change the page url from within a controller.</summary>
     Inject the [`$location`](https://docs.angularjs.org/api/ng/service/$location) service, and use its `path` method. 
