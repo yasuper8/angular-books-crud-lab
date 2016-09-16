@@ -11,7 +11,7 @@ Location: SF
 <!-- framing the "why" in big-picture/real world examples -->
 *This workshop is important because:*
 
-- Deliberate practice is a really effective way to learn. 
+- Deliberate practice is a really effective way to learn.
 - You've been working with a MEAN stack app (where you control the server). Many Angular apps, including this book app, interact with external APIs. Practice both!
 - You'll be expected to be able to build an Angular app from scratch!
 
@@ -45,21 +45,23 @@ Your finished product will:
     * The form will have a save button that sends the edits to the database and, when successfully updated, redirects the user to the home page.
     * have a cancel button that does not save any of the changes the user just made.
 
+## This Repo's Structure
+
+There are three branches in this repo that you might want to pay attention to: `master`, `skeleton`, and `solutions`.
+
+The `master` branch has these instructions, with no starter code.
+
+The `skeleton` branch has the basic parts of the app set up, with some comments to help you as you build out the project. Refer to this branch if you're having trouble setting up your angular app, or if you want relatively spoiler-free hints on how to approach the project. (If you run it as is, you will see errors!)
+
+The `solutions` branch has a fully built-out application that meets all the expectations above. Reference it if you're really stuck, but remember you may have your app set up differently!
+
+**You can work directly from the `master` branch or create another branch for your work!**
+
 ## Getting Started
 
 1. Fork and clone this repo.
 2. Change directories into `angular-books-crud-lab`.
-3. Run `budo -P --host=localhost --open` from the Terminal to start a simple server, and open your app in the browser.
-  * You will see errors in your console now.
-1. You **must** setup `ngRoute before you jump into coding:
-  * Add the CDN for `ngRoute` in the main `index.html`.
-  * Add the `ng-view` directive inside the Bootstrap `.col-md-6` in the main `index.html`
-  * Finally, configure your home `/` route in `app.js`
-    * Which books template will you display?
-    * Which controller will it use?
-    * What will that controller be named "as"?
-
-2. If you see no errors, you're ready to start CRUDing! Build your templates; build your controllers; add a show route; win.
+3. Because we're using client-side routing, our Angular app will need a simple server running. Run `budo -P --host=localhost --open` from the Terminal to start a python server, and open your app in the browser. 
 
 ## Stretch Challenges
 
