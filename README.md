@@ -64,12 +64,18 @@ The `solutions` branch has a fully built-out application that meets all the expe
 * The books api is set up with RESTful routes, so follow RESTful routing conventions.  You can test endpoints with Postman or cURL. 
 * Look at (`console.log`) the data you get back from each `$http` request!
 * <details><summary>Click for a hint on how to change the page url from within a controller.</summary>
-    Inject the `$location` service and use its `.path` method. Example:
-    ```js
-    // inside GoatsShowController, we want to send the user back to goats index (home page) automatically
-    $location.path('/');
-    ```
+    Inject the [`$location`](https://docs.angularjs.org/api/ng/service/$location) service, and use its `path` method. 
+
+    * <details><summary>click for example</summary>  
+    
+      ```js  
+      // inside GoatsShowController, we want to send the user back to goats index (home page) automatically
+      $location.path('/');
+      ```
+      </details>
+      
   </details>
+  
 * <details><summary>Click for a hint on the format of template URLs when using local HTML files.</summary> 
     Give the full file name: `templates/goats-show.html`.
   </details>
