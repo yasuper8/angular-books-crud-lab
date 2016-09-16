@@ -69,6 +69,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
   // inside GoatsShowController, we want to send the user back to goats index (home page) automatically
   $location.path('/');
   ```
+* Since templates are just local HTML files, we'll link them a little differently in when configuring routes. Give the full file name: `templates/goats-show.html`.
 
 ### Stretch Challenges
 
