@@ -56,7 +56,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 
 1. Fork and clone this repo.
 2. Change directories into `angular-books-crud-lab`.
-3. Because we're using client-side routing, our Angular app will need a simple server running. Run `budo -P --host=localhost --open` from the Terminal to start a python server, and open your app in the browser.
+3. Because we're using client-side routing, our Angular app will need a simple server running. Run `python -m SimpleHTTPServer 3000` from the Terminal (inside your project directory). This starts a python server that knows to serve up your `index.html`!
 
 ### Tips
 
