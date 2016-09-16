@@ -77,7 +77,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 
 When you finish work on the books app:
 
-add a 3-5 sentence summary of how the training went for you to the top of the README on your master branch,
-add a link to the class repo at the top of the README on your master branch,
-push your changes to GitHub, and
-and add a link to your repo on the "My Work" section of your personal website.
+* add a 3-5 sentence summary of how the training went for you to the top of the README on your master branch,
+* add a link to the class repo at the top of the README on your master branch,
+* push your changes to GitHub, and
+* and add a link to your repo on the "My Work" section of your personal website.
