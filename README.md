@@ -6,23 +6,18 @@ Location: SF
 
 # Angular Book App
 
-
-### Why is this important?
-<!-- framing the "why" in big-picture/real world examples -->
-*This workshop is important because:*
-
-- Deliberate practice is a really effective way to learn.
-- You've been working with a MEAN stack app (where you control the server). Many Angular apps, including this book app, interact with external APIs. Practice both!
-- You'll be expected to be able to build an Angular app from scratch!
-
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
-*After this workshop, developers will be able to:*
+*After this training, developers will be able to:*
 
 - set up an angular app .
 - use `$http` to access a RESTful API.
 - practice routing in Angular using `ngRoute`.
 
+
+Deliberate practice is a really effective way to build skills. You've learned about a lot of key pieces of an Angular app, and now it's time to put those pieces together.  You'll be expected to be able to build an Angular app from scratch. Also, you've been working with a MEAN stack app in tunely (where you control the server). This book app will stretch the pure Angular learning, as you'll interact with an external API. 
+
+### Overview 
 
 In this lab, you'll be creating a simple library app to keep track of books.
 
