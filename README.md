@@ -15,7 +15,7 @@ Location: SF
 - practice routing in Angular using `ngRoute`.
 
 
-Deliberate practice is a really effective way to build skills. You've learned about a lot of key pieces of an Angular app, and now it's time to put those pieces together.  You'll be expected to be able to build an Angular app from scratch. Also, you've been working with a MEAN stack app in tunely (where you control the server). This book app will stretch the pure Angular learning, as you'll interact with an external API. 
+Deliberate practice is a really effective way to build skills. You've learned about a lot of key pieces of an Angular app, and now it's time to put those pieces together.  You'll be expected to be able to build an Angular app from scratch.
 
 ### Overview 
 
@@ -74,12 +74,3 @@ The `solutions` branch has a fully built-out application that meets all the expe
 
 2. **Allow the user to edit the book image:** allow the user to change the URL for the book image.
 3. **Add filters to organize the books index page:** add a search bar to filter the books by your search, or buttons to sort them alphabetically by author name or book title.
-
-### Deliverables
-
-When you finish work on the books app:
-
-* add a 3-5 sentence summary of how the training went for you to the top of the README on your master branch,
-* add a link to the class repo at the top of the README on your master branch,
-* push your changes to GitHub, and
-* and add a link to your repo on the "My Work" section of your personal website.
