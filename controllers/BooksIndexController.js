@@ -4,4 +4,4 @@ angular.module('libraryApp')
 BooksIndexController.$inject=['$http'];
 function BooksIndexController( $http ) {
   var vm = this;
-}
+};
