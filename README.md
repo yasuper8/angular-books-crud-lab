@@ -58,14 +58,26 @@ The `solutions` branch has a fully built-out application that meets all the expe
 2. Change directories into `angular-books-crud-lab`.
 3. Because we're using client-side routing, our Angular app will need a simple server running. Run `budo -P --host=localhost --open` from the Terminal to start a python server, and open your app in the browser.
 
-Tip: If you want to change the page url from within a controller, inject the `$location` service and use its `.path` method. Example:
+### Tips
 
-```js
-// inside GoatsShowController, we want to send the user back to goats index (home page) automatically
-$location.path('/');
-```
+* If you want to change the page url from within a controller, inject the `$location` service and use its `.path` method. Example:
+
+  ```js
+  // inside GoatsShowController, we want to send the user back to goats index (home page) automatically
+  $location.path('/');
+  ```
+* Commit frequently!
 
 ### Stretch Challenges
 
 2. **Allow the user to edit the book image:** allow the user to change the URL for the book image.
 3. **Add filters to organize the books index page:** add a search bar to filter the books by your search, or buttons to sort them alphabetically by author name or book title.
+
+### Deliverables
+
+When you finish work on the books app:
+
+add a 3-5 sentence summary of how the training went for you to the top of the README on your master branch,
+add a link to the class repo at the top of the README on your master branch,
+push your changes to GitHub, and
+and add a link to your repo on the "My Work" section of your personal website.
