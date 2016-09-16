@@ -25,7 +25,7 @@ When a user goes to `/`, they should see a list of all of the books in the API. 
 
 Your data (a list of books) is available at `https://super-crud.herokuapp.com/books`. You and your classmates will all be working with the shared API; keep that in mind as you make changes.  If there are no books left or far too many books, feel free to reset the database by clicking [the reset button](http://super-crud.herokuapp.com/reset). Don't do this without warning your colleagues, though. They might be puzzled why their newly created book resources aren't appearing in the database.
 
-## Expectations
+### Expectations
 
 Your finished product will:
 
@@ -40,7 +40,7 @@ Your finished product will:
     * The form will have a save button that sends the edits to the database and, when successfully updated, redirects the user to the home page.
     * have a cancel button that does not save any of the changes the user just made.
 
-## This Repo's Structure
+### This Repo's Structure
 
 There are three branches in this repo that you might want to pay attention to: `master`, `skeleton`, and `solutions`.
 
@@ -52,7 +52,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 
 **You can work directly from the `master` branch or create another branch for your work!**
 
-## Getting Started
+### Getting Started
 
 1. Fork and clone this repo.
 2. Change directories into `angular-books-crud-lab`.
@@ -65,7 +65,7 @@ Tip: If you want to change the page url from within a controller, inject the `$l
 $location.path('/');
 ```
 
-## Stretch Challenges
+### Stretch Challenges
 
 2. **Allow the user to edit the book image:** allow the user to change the URL for the book image.
 3. **Add filters to organize the books index page:** add a search bar to filter the books by your search, or buttons to sort them alphabetically by author name or book title.
