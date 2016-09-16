@@ -60,13 +60,15 @@ The `solutions` branch has a fully built-out application that meets all the expe
 
 ### Tips
 
+* Commit frequently!
+* The books api is set up with RESTful routes, so follow RESTful routing conventions.  You can test endpoints with Postman or cURL. 
+* Look at (`console.log`) the data you get back from each `$http` request!
 * If you want to change the page url from within a controller, inject the `$location` service and use its `.path` method. Example:
 
   ```js
   // inside GoatsShowController, we want to send the user back to goats index (home page) automatically
   $location.path('/');
   ```
-* Commit frequently!
 
 ### Stretch Challenges
 
