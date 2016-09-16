@@ -6,11 +6,13 @@ Location: SF
 
 # Angular Book App
 
+Now with [getting started guides from WDI 31](https://docs.google.com/document/d/1LYBb4JrqoGmbFZhADTeAcnp3WQHht9p4MZ8v3NjjnnY/edit)!
+
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
 *After this training, developers will be able to:*
 
-- set up an angular app .
+- set up an angular app.
 - use `$http` to access a RESTful API.
 - practice routing in Angular using `ngRoute`.
 
