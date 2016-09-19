@@ -63,7 +63,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 ### Tips
 
 * Commit frequently!
-* Once you add client-side routing,  Angular will need to be served from a server. Run `python -m SimpleHTTPServer 3000` from the Terminal (inside your project directory). This starts a python server that by default will serve up your `index.html`!
+* Once you add client-side routing,  Angular will need to be served from a server. Run `budo -P --host=localhost --open` from the Terminal (inside your project directory). This starts a simple server that by default will serve up your `index.html` on `/` and any route it doesn't recognize (like `/books`)!
 * The books api is set up with RESTful routes, so follow RESTful routing conventions.  You can test endpoints with Postman or cURL, or by setting up a simple request to trigger them. 
 * Look at (`console.log`) the data you get back from each `$http` request!
 * <details><summary>Click for a hint on how to change the page url from within a controller.</summary>
