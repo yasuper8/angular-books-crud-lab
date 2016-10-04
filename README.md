@@ -6,8 +6,6 @@ Location: SF
 
 # Angular Book App
 
-Now with [getting started guides from WDI 31](https://docs.google.com/document/d/1LYBb4JrqoGmbFZhADTeAcnp3WQHht9p4MZ8v3NjjnnY/edit)!
-
 ### What are the objectives?
 <!-- specific/measurable goal for students to achieve -->
 *After this training, developers will be able to:*
@@ -82,6 +80,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 * <details><summary>Click for a hint on the format of template URLs when using local HTML files.</summary> 
     Give the full file name: `templates/goats-show.html`.
   </details>
+* WDI31's [getting started guide](https://docs.google.com/document/d/1LYBb4JrqoGmbFZhADTeAcnp3WQHht9p4MZ8v3NjjnnY/edit)!
 
 ### Stretch Challenges
 
