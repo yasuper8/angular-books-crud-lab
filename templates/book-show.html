@@ -1,0 +1,54 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <div class='row'>
+                <div class="col-md-3 col-xs-12 thumbnail">
+                  <img ng-src="{{BookShowCtrl.aBook.image}}" alt="book image">
+                </div>
+
+                <div class="col-md-9 col-xs-12">
+                  <ul class="list-group form-inline">
+                    <li class="list-group-item">
+                      <h4 class='inline-header'>Book Title :</h4>
+                      <span>{{BookShowCtrl.aBook.title}}</span>
+                    </li>
+
+                    <li class="list-group-item">
+                      <h4 class='inline-header'>Author :</h4>
+                      <span ng-hide="editing">{{BookShowCtrl.aBook.author}}</span>
+                    </li>
+
+                    <li class="list-group-item">
+
+                        <button class='btn btn-info' ng-click="editing = true" >Edit this book info</button>
+                        <button class='btn btn-success' ng-show="editing" ng-click="BookShowCtrl.editBook(BookShowCtrl.aBook); editing = false">Save Changes</button>
+                        <br>
+                        <label ng-show="editing" class="col-md-4 control-label">Book Title</label>
+                        <input ng-show="editing" ng-model="BookShowCtrl.aBook.title " type="text" class="form-control input-md">
+                        <label ng-show="editing" class="col-md-4 control-label">Author</label>
+                        <input ng-show="editing" ng-model="BookShowCtrl.aBook.author" type="text" class="form-control input-md">
+                        <label ng-show="editing" class="col-md-4 control-label">Book Cover Image</label>
+                        <input ng-show="editing" ng-model="BookShowCtrl.aBook.image" type="text" class="form-control input-md">
+                        <!-- <label ng-show="editing" class="col-md-4 control-label">Author</label>
+                        <input ng-show="editing" ng-model="bookEdited.author" type="text" class="form-control input-md"> -->
+                        <br>
+                        <button class='btn btn-danger' ng-click="BookShowCtrl.deleteBook(aBook)">Delete this book</button>
+
+
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

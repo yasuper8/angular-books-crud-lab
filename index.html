@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookApp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Angular Book App</title>
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="vendor/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="public/styles/styles.css">
+
+  <!-- VENDOR SCRIPTS -->
+  <script src="vendor/angular.js"></script>
+  <script src="vendor/angular-route.js"></script>
+
+  <!-- APPLICATION SCRIPTS -->
+  <script src="public/scripts/app.js"></script>
+  <script src="public/scripts/BookIndexController.js"></script>
+  <script src="public/scripts/BookShowController.js"></script>
+
+</head>
+<body ng-controller="BookIndexCtrl as books">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Welcome to my book app</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6" ng-view></div>
+    </div>
+  </div>
+
+
+</body>
+</html>
