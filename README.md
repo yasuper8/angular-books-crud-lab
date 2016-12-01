@@ -42,11 +42,9 @@ Your finished product will:
 
 ### This Repo's Structure
 
-There are three branches in this repo that you might want to pay attention to: `master`, `skeleton`, and `solutions`.
+There are two branches in this repo that you might want to pay attention to: `master` and `solutions`.
 
 The `master` branch has these instructions, with no starter code.
-
-The `skeleton` branch has the basic parts of the app set up, with some comments to help you as you build out the project. Refer to this branch if you're having trouble setting up your angular app, or if you want relatively spoiler-free hints on how to approach the project. (If you run it as is, you will see errors!)
 
 The `solutions` branch has a fully built-out application that meets all the expectations above. Reference it if you're really stuck, but remember you may have your app set up differently!
 
@@ -54,7 +52,7 @@ The `solutions` branch has a fully built-out application that meets all the expe
 
 ### Getting Started
 
-1. Fork and clone this repo.
+1. Clone this repo.
 2. Change directories into `angular-books-crud-lab`.
 3. Start creating the files you need for your project! (`index.html` and `app.js` are safe bets to start.)
 
