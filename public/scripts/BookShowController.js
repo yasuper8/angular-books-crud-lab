@@ -45,5 +45,8 @@ function BookShowController ($http, $routeParams, $location) {
     });
   }
 
+  vm.cancelEdit = function() {
+      $location.path('/');
+  }
 
 }

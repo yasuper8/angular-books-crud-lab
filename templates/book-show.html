@@ -20,13 +20,16 @@
 
                     <li class="list-group-item">
                       <h4 class='inline-header'>Author :</h4>
-                      <span ng-hide="editing">{{BookShowCtrl.aBook.author}}</span>
+                      <span>{{BookShowCtrl.aBook.author}}</span>
                     </li>
+                    <br><br>
 
                     <li class="list-group-item">
 
                         <button class='btn btn-info' ng-click="editing = true" >Edit this book info</button>
                         <button class='btn btn-success' ng-show="editing" ng-click="BookShowCtrl.editBook(BookShowCtrl.aBook); editing = false">Save Changes</button>
+                        <button class='btn btn-warning' ng-show="editing" ng-click="BookShowCtrl.cancelEdit(); editing = false">Cancel</button>
+                        <br>
                         <br>
                         <label ng-show="editing" class="col-md-4 control-label">Book Title</label>
                         <input ng-show="editing" ng-model="BookShowCtrl.aBook.title " type="text" class="form-control input-md">
