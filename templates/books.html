@@ -1,7 +1,9 @@
 <div class="container">
-  <div class="row" ng-repeat="book in booksCtrl.books">
+  <input type="text" class="form-control ng-valid ng-dirty"  placeholder="Serach By Keywords"  ng-model="searchKeyword">
+  <div class="row" ng-repeat="book in booksCtrl.books | filter: searchKeyword">
 
-
+  <br>
+  <br>
     <div class="col-md-9 col-xs-12">
       <ul class="list-group form-inline">
         <li class="list-group-item">
